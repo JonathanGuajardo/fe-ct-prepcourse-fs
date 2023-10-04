@@ -8,14 +8,13 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   esPositivo = 7
-   if (num >= 1) {
-      console.log("es positivo")
-      return ("es positivo")
-   } else if (num <= -1) {
-      return ("es negativo")
+   if (num > 0) {
+      return "Es positivo"
+   }  else if ( num < 0) {
+      return "Es negativo"
    } else return false
 }
+
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
@@ -39,7 +38,7 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-var saludo = "Hola " + (nombre)
+var saludo = "Hola " + (nombre + "!")
    obtenerSaludo = ("jonathan"); {
       return saludo
    }
@@ -87,18 +86,12 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-var laLetraEs = "e"
-letra = (laLetraEs)
-   if (letra.length !== 1); {
-      return " dato incorrecto"
+      if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+      return   "Es vocal" 
+      }  else if (letra.length != 1) {
+         return "Dato incorrecto"
+      }  else return "Dato incorrecto"
    }
-letra = letra.toLowerCase();
-
-   if (letra === "a" || letra === "e" || letra === "i"  || letra === "o" || letra === "u") {
-      return "es una vocal"
-
-   } else return " dato incorrecto"
-} 
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
@@ -112,3 +105,4 @@ module.exports = {
    deEuroAdolar,
    esVocal,
 };
+
