@@ -30,6 +30,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
    // Redondea "num" hacia arriba y retórnalo.
    // Tu código:
+   // nuevo comentario
    return Math.ceil (num)
 }
 
